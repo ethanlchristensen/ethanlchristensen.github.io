@@ -3,7 +3,7 @@
 
 A Path finding visualizer using three.js. Project served as a means to practice using three.js and implementing path finding algorithm within JS.
 
-
+<a href="https://ethanlchristensen.github.io/">Hosted Live Here</a>
 
 
 
