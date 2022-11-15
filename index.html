@@ -614,22 +614,22 @@ async function solve(key) {
                     let x2 = state[0] - 1;
                     let z2 = state[1] - 1;
                     if (x1 <= u && x1 >= l) {
-                        heuristicCost = manhattan(endBoxPosition, [x1, z]);
+                        let heuristicCost = manhattan(endBoxPosition, [x1, z]);
                         let updatedActions = actions.concat([[x1, z]]);
                         Q.enqueue([[x1, z], updatedActions, cost + 1], cost + 1 + heuristicCost);
                     }
                     if (z1 <= u && z1 >= l) {
-                        heuristicCost = manhattan(endBoxPosition, [x, z1]);
+                        let heuristicCost = manhattan(endBoxPosition, [x, z1]);
                         let updatedActions = actions.concat([[x, z1]]);
                         Q.enqueue([[x, z1], updatedActions, cost + 1], cost + 1 + heuristicCost);
                     }
                     if (x2 <= u && x2 >= l) {
-                        heuristicCost = manhattan(endBoxPosition, [x2, z]);
+                        let heuristicCost = manhattan(endBoxPosition, [x2, z]);
                         let updatedActions = actions.concat([[x2, z]]);
                         Q.enqueue([[x2, z], updatedActions, cost + 1], cost + 1 + heuristicCost);
                     }
                     if (z2 <= u && z2 >= l) {
-                        heuristicCost = manhattan(endBoxPosition, [x, z2]);
+                        let heuristicCost = manhattan(endBoxPosition, [x, z2]);
                         let updatedActions = actions.concat([[x, z2]]);
                         Q.enqueue([[x, z2], updatedActions, cost + 1], cost + 1 + heuristicCost);
                     }
